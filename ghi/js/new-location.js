@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     if (response.ok) {// response ok, get data
       const data = await response.json();
-      console.log(data);
+    //   console.log(data);
 
       const selectTag = document.getElementById('state');
       for (let state of data.states) {
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       }
     }
     const formTag = document.getElementById('create-location-form');
-    formTag.addEventListener('submit', async event => {
+    formTag.addEventListener('submit', async (event) => {
       event.preventDefault();
       const formData = new FormData(formTag);
       const json = JSON.stringify(Object.fromEntries(formData));
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       if (response.ok) {
         formTag.reset();
         const newLocation = await response.json();
-        
+
       }
     });
 

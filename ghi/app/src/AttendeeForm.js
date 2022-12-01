@@ -89,7 +89,7 @@ class AttendeeForm extends React.Component {
     return (
         <div className="row">
             <div className="col col-sm-auto">
-            <img width="300" className="bg-white rounded shadow d-block mx-auto mb-4" src="./logo.svg"/>
+            <img width="300" className="bg-white rounded shadow d-block mx-auto mb-4" src="/logo.svg"/>
             </div>
             <div className="col">
             <div className="card shadow">
